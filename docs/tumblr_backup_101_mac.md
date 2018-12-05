@@ -62,7 +62,7 @@ Assuming you haven't moved where you saved the posts originally, you can only sa
 
 If you moved the archive folder, do this instead:
 
-	python tumblr_backup.py --incremental <blog> --outdir=**<path to new folder>**
+	python tumblr_backup.py --incremental <blog> --outdir=<path to new folder>
 
 * Again, if you're on Mac, just type the whole thing up to `outdir=` (no space at the end!) and drag your folder into Terminal.
 
