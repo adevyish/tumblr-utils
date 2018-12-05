@@ -14,47 +14,45 @@ If you’re on Mac, you're already set.
 
 1. Open a terminal window and go to your unzipped folder.
 
-   * on Mac:
+	1. Command-Space, type `Terminal`, hit enter. A new window should open.
+	2. Type `cd ` (note the space) then drag the folder you unzipped into the window. It should automatically give you something like
 
-		1. Command-Space, type `Terminal`, hit enter. A new window should open.
-		2. Type `cd ` (note the space) then drag the folder you unzipped into the window. It should automatically give you something like
+		```> cd your/folder/here```
 
-			```> cd your/folder/here```
-
-		3. Hit enter
+	3. Hit enter
 
 2. Type:
 
 		python tumblr_backup.py <blog>
 
-where ***blog*** is the person's username, for example ***blog**.tumblr.com*
+	where ***blog*** is the person's username, for example ***blog**.tumblr.com*
 
 3. It'll show a progress bar. Wait. Make some lunch.
 4. Posts will be saved to a folder named ***blog*** inside your unzipped folder.
 
-There are some options available if you want to save/not save certain things. For example:
+	There are some options available if you want to save/not save certain things. For example:
 
-* Save audio and video from posts:
+	* Save audio and video from posts:
 
-		python tumblr_backup.py --save-video --save-audio <blog>
+			python tumblr_backup.py --save-video --save-audio <blog>
 
-* Don't save images from posts:
+	* Don't save images from posts:
 
-		python tumblr_backup.py --skip-images <blog>
+			python tumblr_backup.py --skip-images <blog>
 
-* Don't save reblogged posts:
+	* Don't save reblogged posts:
 
-		python tumblr_backup.py --no-reblog <blog>
+			python tumblr_backup.py --no-reblog <blog>
 
-* Save only posts tagged with certain tags:
+	* Save only posts tagged with certain tags:
 
-		python tumblr_backup.py --tags=tag1,tag2 <blog>
+			python tumblr_backup.py --tags=tag1,tag2 <blog>
 
-You can combine the above options.
+	You can combine the above options.
 
-You can also save only likes:
+	You can also save only likes:
 
-	python tumblr_backup.py --likes <blog>
+		python tumblr_backup.py --likes <blog>
 
 ### BONUS: Re-archive an already saved blog
 
