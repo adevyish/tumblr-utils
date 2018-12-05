@@ -1,0 +1,66 @@
+# Tumblr Backup 101 (Mac)
+
+## 1. Setup Python
+
+If you’re on Mac, you're already set.
+
+## 2. Download tumblr-utils
+
+1. Go to this page: https://github.com/adevyish/tumblr-utils
+2. Click the green button at right that says **Clone or download** then click **Download ZIP**
+3. Unzip it
+
+## 3. Run tumblr-utils
+
+1. Open a terminal window and go to your unzipped folder.
+	* on Mac:
+		1. Command-Space, type `Terminal`, hit enter. A new window should open.
+		2. Type `cd ` (note the space) then drag the folder you unzipped into the window. It should automatically give you something like
+
+			 ```> cd your/folder/here```
+
+		3. Hit enter
+2. Type:
+	```python tumblr_backup.py **<blog name>**```
+3. It'll show a progress bar. Wait. Make some lunch.
+4. Posts will be saved to a folder named ***blog name*** inside your unzipped folder.
+
+There are some options available if you want to save/not save certain things. For example:
+
+* Save audio and video from posts:
+	```python tumblr_backup.py --save-video --save-audio **<blog name>**```
+* Don't save images from posts:
+	```python tumblr_backup.py --skip-images **<blog name>**```
+* Don't save reblogged posts:
+	```python tumblr_backup.py --no-reblog **<blog name>**```
+* Save only posts tagged with certain tags:
+	```python tumblr_backup.py --tags=tag1,tag2 **<blog name>**```
+
+You can combine the above options.
+
+You can also save only likes:
+	```python tumblr_backup.py --likes **<blog name>**```
+
+### BONUS: Re-archive an already saved blog
+
+Assuming you haven't moved where you saved the posts originally,
+
+	```python tumblr_backup.py --incremental **<blog name>**```
+
+will only save new posts.
+
+If you moved the archive folder, do this instead:
+
+	```python tumblr_backup.py --incremental **<blog name>** --outdir=**<path to new folder>**```
+
+* Again, if you're on Mac, just type the whole thing up to `outdir=` (no space at the end!) and drag your folder into Terminal.
+
+## 4. Create tag pages
+
+I'm fixing this script so it'll make tag pages. Get back to me on this.
+
+## Caveats
+
+* The HTML output by this is currently W3C non-compliant.
+* This won't save custom styles, and if you have a custom style it will not work with it.
+* This won't save custom pages. You'll have to save those yourself one by one. Using your browser's **Save As** function with format set to **Web Archive** (or similar) is good enough.

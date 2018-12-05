@@ -1,4 +1,4 @@
-# Tumblr Backup 101
+# Tumblr Backup 101 (Windows)
 
 This guide is for 100% programming/coding newbies to use this Tumblr Backup service.
 
