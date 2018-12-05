@@ -13,45 +13,60 @@ If you’re on Mac, you're already set.
 ## 3. Run tumblr-utils
 
 1. Open a terminal window and go to your unzipped folder.
-	* on Mac:
+
+   * on Mac:
+
 		1. Command-Space, type `Terminal`, hit enter. A new window should open.
 		2. Type `cd ` (note the space) then drag the folder you unzipped into the window. It should automatically give you something like
 
-			 ```> cd your/folder/here```
+			```> cd your/folder/here```
 
 		3. Hit enter
+
 2. Type:
-	```python tumblr_backup.py **<blog name>**```
+
+		python tumblr_backup.py <blog>
+
+where ***blog*** is the person's username, for example ***blog**.tumblr.com*
+
 3. It'll show a progress bar. Wait. Make some lunch.
-4. Posts will be saved to a folder named ***blog name*** inside your unzipped folder.
+4. Posts will be saved to a folder named ***blog*** inside your unzipped folder.
 
 There are some options available if you want to save/not save certain things. For example:
 
 * Save audio and video from posts:
-	```python tumblr_backup.py --save-video --save-audio **<blog name>**```
+
+		python tumblr_backup.py --save-video --save-audio <blog>
+
 * Don't save images from posts:
-	```python tumblr_backup.py --skip-images **<blog name>**```
+
+		python tumblr_backup.py --skip-images <blog>
+
 * Don't save reblogged posts:
-	```python tumblr_backup.py --no-reblog **<blog name>**```
+
+		python tumblr_backup.py --no-reblog <blog>
+
 * Save only posts tagged with certain tags:
-	```python tumblr_backup.py --tags=tag1,tag2 **<blog name>**```
+
+		python tumblr_backup.py --tags=tag1,tag2 <blog>
 
 You can combine the above options.
 
 You can also save only likes:
-	```python tumblr_backup.py --likes **<blog name>**```
+
+	python tumblr_backup.py --likes <blog>
 
 ### BONUS: Re-archive an already saved blog
 
 Assuming you haven't moved where you saved the posts originally,
 
-	```python tumblr_backup.py --incremental **<blog name>**```
+	python tumblr_backup.py --incremental <blog>
 
 will only save new posts.
 
 If you moved the archive folder, do this instead:
 
-	```python tumblr_backup.py --incremental **<blog name>** --outdir=**<path to new folder>**```
+	python tumblr_backup.py --incremental <blog> --outdir=**<path to new folder>**
 
 * Again, if you're on Mac, just type the whole thing up to `outdir=` (no space at the end!) and drag your folder into Terminal.
 
