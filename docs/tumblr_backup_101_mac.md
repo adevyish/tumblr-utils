@@ -56,11 +56,9 @@ If you’re on Mac, you're already set.
 
 ### BONUS: Re-archive an already saved blog
 
-Assuming you haven't moved where you saved the posts originally,
+Assuming you haven't moved where you saved the posts originally, you can only save new posts by running:
 
 	python tumblr_backup.py --incremental <blog>
-
-will only save new posts.
 
 If you moved the archive folder, do this instead:
 
