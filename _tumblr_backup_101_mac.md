@@ -4,6 +4,13 @@
 
 If you’re on Mac, you're already set.
 
+If you want to download audio or video, also do this:
+
+1. Install PIP: [follow these instructions](https://pip.pypa.io/en/stable/installing/)
+2. Run
+
+		sudo pip install --upgrade youtube_dl
+
 ## 2. Download tumblr-utils
 
 1. Go to this page: https://github.com/adevyish/tumblr-utils
@@ -39,8 +46,8 @@ If you’re on Mac, you're already set.
 	* Save audio and video from posts:
 
 			python tumblr_backup.py --save-video --save-audio blogname
-
-        You'll need to download and install [youtube-dl](https://rg3.github.io/youtube-dl/) first before running this. 
+		
+		As mentioned above, you'll need to have the python module for youtube-dl installed.
 
 	* Don't save images from posts:
 
