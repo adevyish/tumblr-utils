@@ -23,46 +23,52 @@ If you’re on Mac, you're already set.
 
 2. Type:
 
-		python tumblr_backup.py <blog>
+		python tumblr_backup.py blogname
 
-	where ***blog*** is the person's username, for example ***blog**.tumblr.com*
+	where ***blogname*** is the person's username, for example ***blogname**.tumblr.com*
 
 3. It'll show a progress bar. Wait. Make some lunch.
-4. Posts will be saved to a folder named ***blog*** inside your unzipped folder.
+4. Posts will be saved to a folder named ***blogname*** inside your unzipped folder.
 
 	There are some options available if you want to save/not save certain things. For example:
 
 	* Save audio and video from posts:
 
-			python tumblr_backup.py --save-video --save-audio <blog>
+			python tumblr_backup.py --save-video --save-audio blogname
+
+    You'll need to download and install [youtube-dl](https://rg3.github.io/youtube-dl/) first before running this. 
 
 	* Don't save images from posts:
 
-			python tumblr_backup.py --skip-images <blog>
+			python tumblr_backup.py --skip-images blogname
 
 	* Don't save reblogged posts:
 
-			python tumblr_backup.py --no-reblog <blog>
+			python tumblr_backup.py --no-reblog blogname
 
 	* Save only posts tagged with certain tags:
 
-			python tumblr_backup.py --tags=tag1,tag2 <blog>
+			python tumblr_backup.py --tags=tag1,tag2 blogname
 
 	You can combine the above options.
 
 	You can also save only likes:
 
-		python tumblr_backup.py --likes <blog>
+		python tumblr_backup.py --likes blogname
 
 ### BONUS: Re-archive an already saved blog
 
 Assuming you haven't moved where you saved the posts originally, you can only save new posts by running:
 
-	python tumblr_backup.py --incremental <blog>
+	python tumblr_backup.py --incremental blogname
 
 If you moved the archive folder, do this instead:
 
-	python tumblr_backup.py --incremental <blog> --outdir=<path to new folder>
+<<<<<<< HEAD:_tumblr_backup_101_mac.md
+	python tumblr_backup.py --incremental blogname --outdir=path/to/folder
+=======
+	python tumblr_backup.py --incremental <blog> --outdir=**<path to new folder>**
+>>>>>>> parent of 689a4c3... Update tumblr_backup_101_mac.md:docs/tumblr_backup_101_mac.md
 
 * Again, if you're on Mac, just type the whole thing up to `outdir=` (no space at the end!) and drag your folder into Terminal.
 
