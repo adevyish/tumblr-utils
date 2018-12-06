@@ -104,6 +104,8 @@ HTTP_CHUNK_SIZE = 1024 * 1024
 # bb-tumblr-backup API key
 API_KEY = '8YUsKJvcJxo2MDwmWMDiXZGuMuIbeCwuQGP5ZHSEA4jBJPMnJT'
 
+FILENAME_LIMIT = 250
+
 # ensure the right date/time format
 try:
     locale.setlocale(locale.LC_TIME, '')
@@ -301,7 +303,8 @@ def slugify(value):
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
     value = unicode(re.sub('[^\w\s-]', '', value).strip().lower())
     value = unicode(re.sub('[-\s]+', '-', value))
-    return value[:250] # TODO: figure out what to do if there's a collision here...
+    # TODO: figure out what to do if there's a collision here...
+    return value[:FILENAME_LIMIT]
 
 
 class Index:
