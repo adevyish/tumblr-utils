@@ -36,7 +36,7 @@ If you’re on Mac, you're already set.
 
 			python tumblr_backup.py --save-video --save-audio blogname
 
-          You'll need to download and install [youtube-dl](https://rg3.github.io/youtube-dl/) first before running this. 
+        You'll need to download and install [youtube-dl](https://rg3.github.io/youtube-dl/) first before running this. 
 
 	* Don't save images from posts:
 
