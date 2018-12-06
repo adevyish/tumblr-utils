@@ -23,7 +23,7 @@ If you’re on Mac, you're already set.
 
 2. Type:
 
-		python tumblr_backup.py --tag-index blogname
+		python tumblr_backup.py blogname
 
 	where ***blogname*** is the person's username, for example ***blogname**.tumblr.com*
 
@@ -31,6 +31,10 @@ If you’re on Mac, you're already set.
 4. Posts will be saved to a folder named ***blogname*** inside your unzipped folder.
 
 	There are some options available if you want to save/not save certain things. For example:
+
+	* Generate tag pages:
+
+			python tumblr_backup.py --tag-index blogname
 
 	* Save audio and video from posts:
 
