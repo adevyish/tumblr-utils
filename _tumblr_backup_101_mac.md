@@ -23,7 +23,7 @@ If you’re on Mac, you're already set.
 
 2. Type:
 
-		python tumblr_backup.py blogname
+		python tumblr_backup.py --tag-index blogname
 
 	where ***blogname*** is the person's username, for example ***blogname**.tumblr.com*
 
@@ -36,7 +36,7 @@ If you’re on Mac, you're already set.
 
 			python tumblr_backup.py --save-video --save-audio blogname
 
-    You'll need to download and install [youtube-dl](https://rg3.github.io/youtube-dl/) first before running this. 
+          You'll need to download and install [youtube-dl](https://rg3.github.io/youtube-dl/) first before running this. 
 
 	* Don't save images from posts:
 
@@ -64,17 +64,9 @@ Assuming you haven't moved where you saved the posts originally, you can only sa
 
 If you moved the archive folder, do this instead:
 
-<<<<<<< HEAD:_tumblr_backup_101_mac.md
 	python tumblr_backup.py --incremental blogname --outdir=path/to/folder
-=======
-	python tumblr_backup.py --incremental <blog> --outdir=**<path to new folder>**
->>>>>>> parent of 689a4c3... Update tumblr_backup_101_mac.md:docs/tumblr_backup_101_mac.md
 
 * Again, if you're on Mac, just type the whole thing up to `outdir=` (no space at the end!) and drag your folder into Terminal.
-
-## 4. Create tag pages
-
-I'm fixing this script so it'll make tag pages. Get back to me on this.
 
 ## Caveats
 
