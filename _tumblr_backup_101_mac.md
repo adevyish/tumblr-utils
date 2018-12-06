@@ -66,6 +66,8 @@ Assuming you haven't moved where you saved the posts originally, you can only sa
 
 	python tumblr_backup.py --incremental blogname
 
+(Don't forget to include any custom flags you used above to save audio, generate tag pages, and such!)
+
 If you moved the archive folder, do this instead:
 
 	python tumblr_backup.py --incremental blogname --outdir=path/to/folder
