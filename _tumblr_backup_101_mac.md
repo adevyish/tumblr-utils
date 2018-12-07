@@ -4,12 +4,16 @@
 
 If you’re on Mac, you're already set.
 
-If you want to download audio or video, also do this:
+If you want to download audio or video, or generate tag indexes:
 
 1. Install PIP: [follow these instructions](https://pip.pypa.io/en/stable/installing/)
-2. Run
+2. To enable audio/video download:
 
-		sudo pip install --upgrade youtube_dl
+		sudo -H pip install --upgrade youtube_dl
+
+3. To enable tag indexes:
+
+		sudo -H pip install --upgrade unicode-slugify
 
 ## 2. Download tumblr-utils
 
