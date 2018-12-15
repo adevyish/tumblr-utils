@@ -41,35 +41,37 @@ If you want to download audio or video, or generate tag indexes:
 3. It'll show a progress bar. Wait. Make some lunch.
 4. Posts will be saved to a folder named ***blogname*** inside your unzipped folder.
 
-	There are some options available if you want to save/not save certain things. For example:
+### Options
 
-	* Generate tag pages:
+There are some options available if you want to save/not save certain things. For example:
 
-			python tumblr_backup.py --tag-index blogname
+* Generate tag pages:
 
-	* Save audio and video from posts:
+		python tumblr_backup.py --tag-index blogname
 
-			python tumblr_backup.py --save-video --save-audio blogname
-		
-		As mentioned above, you'll need to have the python module for youtube-dl installed.
+* Save audio and video from posts:
 
-	* Don't save images from posts:
+		python tumblr_backup.py --save-video --save-audio blogname
 
-			python tumblr_backup.py --skip-images blogname
+	As mentioned above, you'll need to have the python module for youtube-dl installed.
 
-	* Don't save reblogged posts:
+* Don't save images from posts:
 
-			python tumblr_backup.py --no-reblog blogname
+		python tumblr_backup.py --skip-images blogname
 
-	* Save only posts tagged with certain tags:
+* Don't save reblogged posts:
 
-			python tumblr_backup.py --tags=tag1,tag2 blogname
+		python tumblr_backup.py --no-reblog blogname
 
-	You can combine the above options.
+* Save only posts tagged with certain tags:
 
-	You can also save only likes:
+		python tumblr_backup.py --tags=tag1,tag2 blogname
 
-		python tumblr_backup.py --likes blogname
+You can combine the above options.
+
+You can also save only likes:
+
+	python tumblr_backup.py --likes blogname
 
 ### BONUS: Re-archive an already saved blog
 
