@@ -8,9 +8,9 @@ This is a collection of utilities dealing with Tumblr blogs, forked from [bbolli
 
 ## Instructions
 
-- [Tumblr backup](blob/master/_tumblr_backup.md)
-- [Tumblr backup 101 (Windows)](blob/master/_tumblr_backup_101_windows.md)
-- [Tumblr backup 101 (Mac)](blob/master/_tumblr_backup_101_mac.md)
+- [Tumblr backup](_tumblr_backup.md)
+- [Tumblr backup 101 (Windows)](_tumblr_backup_101_windows.md)
+- [Tumblr backup 101 (Mac)](_tumblr_backup_101_mac.md)
 
 ## Requirements
 
